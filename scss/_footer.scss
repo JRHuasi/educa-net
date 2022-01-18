@@ -1,19 +1,30 @@
-#footer {
-  overflow: hidden;
-  background-color: $fondoMenu;
-  width: 100%; /* Full width */
-  display: flex;
-	justify-content: space-around;
-	padding-top: 20px;
+#banda {
+	background-color: $fondoMenu;
+	position: relative;
 	color: #fff;
-	#tafi{
-		font-weight: bold;
-		img{
-			height: 30px;
+	#footer {
+		overflow: hidden;
+		width: 100%; /* Full width */
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-around;
+		padding-top: 20px;
+		text-align: center;
+		#logo{
+			padding: 0 15px;
+			img{
+				width: 100%;
+			}
 		}
-		a{
-			text-decoration: none;
-			color: #fff;
+		p{
+			margin: 0px;
 		}
+	}
+	#banda-inferior{
+		text-align: center;
+		font-size: 12px;
+	}
+	#whatsapp{
+		position: absolute;
 	}
 }

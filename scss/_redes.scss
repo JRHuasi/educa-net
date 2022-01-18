@@ -1,0 +1,22 @@
+#redes {
+	justify-content: center;
+	margin: auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	#red{
+		padding: 20px 10px;
+		text-align: center;
+		color: white;
+		img {
+			width: 100%;
+		}
+		.cursos{
+			text-align: left;
+			ul{
+				padding-left: 20px;
+			}
+		}
+	}
+}

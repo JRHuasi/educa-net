@@ -1,13 +1,17 @@
 <script>
     import { metatags } from '@roxi/routify'
     
-    metatags.title = 'My Routify app'
-    metatags.description = 'Description coming soon...'
+    metatags.title = 'Educa Net'
+    metatags.description = '.................'
+    import Slider from './_componentes/Slider.svelte';
+		import Areas from './_componentes/Areas.svelte';
+		import Redes from './_componentes/Redes.svelte';
 </script>
 
-<h1>EDUCA NET</h1>
+<!-- <Slider /> -->
 
-
+<Areas />
+<!-- <Redes /> -->
 
 <style lang="scss">
 

@@ -15,27 +15,25 @@
 <aside>
   <nav class="mobile-nav">
     <span class="burger" on:click={handleBurger}>☰</span>
-    <span class="title">Educa Net</span>    
+    <span class="title"><img src="imagenes/logo-educanet.jpg" alt=""></span>    
   </nav>
   <nav class:show on:click={() => (show = false)}>
-		<a href=".">
-			LOGO
+		<a href="." id="logo-superior">
+			<img src="imagenes/logo-educanet.jpg" alt="">
 		</a>
     {#each _enlacesMenu as [path, name]}
       <a class="link" class:active={$isActive(path)} href={$url(path)}>
         {@html name}
       </a>
     {/each}
-		<a class="link" href={$url('login')}>
-			<Fa icon={faUser} /> Login
-		</a>
-		<a class="link" href={$url('login')}>
-			<Fa icon={faSignInAlt} />
-		</a>
 </nav>
 </aside>
 
 <style lang="scss">
+
+  img{
+    width: 200px;
+  }
   
 </style>
 

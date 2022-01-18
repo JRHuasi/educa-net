@@ -1,14 +1,17 @@
 aside {
   text-align: center;
   nav {
-    color: #FFF;
-    background: black;
+    color: black;
+    background: white;
     font-weight: 600;
     a {
-      color: white;
+      color: black;
       text-decoration: none;
+      &#logo-superior{
+        display: none;
+      }
     }
-  }
+}
 
   .link {
     display: block;
@@ -19,7 +22,7 @@ aside {
   }
   .mobile-nav {
     font-size: 18px;
-    background: black;
+    background: white;
     padding: 8px;
     box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.075);
     display: block;
@@ -49,7 +52,7 @@ aside {
     z-index: 1;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 1200px) {
     nav {
       // margin: 16px;
       border-radius: 4px;
@@ -57,6 +60,12 @@ aside {
       display: inline-block;
       position: relative;
       // width: auto;
+      a#logo-superior{
+        display: inline-block;
+        margin-right: 150px;
+      }
+
+
     }
     .link {
       padding: 0 16px;
