@@ -1,6 +1,6 @@
 <script>
 	import Carrera from './Area.svelte';
-	import {redes} from '../_stores/carreras';
+	import {redes} from '../_stores/areas';
 </script>
 
 <div id="redes">

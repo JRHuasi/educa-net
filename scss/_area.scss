@@ -1,7 +1,8 @@
-#area{		
+.area{		
 	padding: 20px 10px;
 	text-align: center;
 	color: white;
+	
 	img {
 		width: 80px;
 	}
@@ -16,9 +17,12 @@
 		}
 	}
 	
-	// #educacion{ background-color: #234223 }
-	// #economica{ background-color: #234223 }
-	// #judiciales{ background-color: #234223 }
-	// #higiene{ background-color: #234223 }
+	&#educacion{ 
+		background: url(imagenes/areas_fondos/educacion.jpg) no-repeat;
+    background-size: 100%;
+	 }
+	// #economia-y-administracion{ background-color: #234223 }
+	// #juridicas-y-sociales{ background-color: #234223 }
+	// #higiene-y-seguridad{ background-color: #234223 }
 	// #comunicacion{ background-color: #234223} 
 }

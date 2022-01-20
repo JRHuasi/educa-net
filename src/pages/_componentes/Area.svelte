@@ -2,15 +2,15 @@
 	import { url, isActive } from "@roxi/routify";
 	import { salto } from "../_stores/saltos"
 
-	export let carrera;
-	console.log(carrera);
+	export let area;
+	// console.log(area);
 </script>
 
-<div id="area" style="background-color: {carrera.color}">
-	<img src="imagenes/areas/{carrera.imagen}" alt="{carrera.area}">
-	<h3>{carrera.area}</h3>
+<div id={area.uri} class="area" style="background: url(imagenes/areas_fondos/{area.uri}.jpg) no-repeat; background-position: center center; background-size: cover;">
+	<img src="imagenes/areas/{area.imagen}" alt="{area.area}">
+	<h3>{area.area}</h3>
 	<ul class="cursos">
-		{#each carrera.carreras as carr}
+		{#each area.carreras as carr}
 			<li>
 				 <a href={$url(`estudios/${carr.estudio}`)} target="_blank">
 					{carr.nombre}</a>

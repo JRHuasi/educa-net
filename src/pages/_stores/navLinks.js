@@ -1,6 +1,6 @@
 export const _enlacesMenu = [	
 	["./la-fundacion", "La Fundación"],
-	["./carreras-universitarias", "Carreras Universitarias"],
+	["./ufasta", "Ufasta"],
 	["./cursos-diplomaturas", "Cursos y Diplomaturas"],
 	["./blog", "Blog"],
 	["./contacto", "Contacto"],

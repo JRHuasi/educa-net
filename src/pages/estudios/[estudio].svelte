@@ -1,6 +1,6 @@
 <script>
 	import { goto } from "@roxi/routify";
-	import { saltos } from "../_stores/carreras"
+	import { saltos } from "../_stores/areas"
 	import { salto } from "../_stores/saltos"
 	// const salto = (url) => {
 	// 	window.location.href = url;
@@ -13,10 +13,8 @@
 	console.log({carrera})
 
 	setTimeout(() => {
-		// $goto(carrera[0].uri);
 		const url = carrera[0].uri;
 		salto(url)
-		// console.log("BOOM!!!")
 	}, 2000);
 </script>
 <div id="estudio">

@@ -1,10 +1,19 @@
 @import '_vars';
 @import 'menu';
+@import 'slide';
+@import 'slider';
 @import 'nav';
 @import 'area';
+@import 'ufasta';
+@import 'consulta';
 @import 'redes';
 @import 'footer';
 @import 'tucmacom';
+
+
+* {
+	box-sizing: border-box;
+}
 
 html {
 	position: relative;

@@ -1,0 +1,74 @@
+
+.mySlides {
+	position: relative;
+  display: none;
+
+	/* Number text (1/3 etc) */
+	img{
+		width: 100%;
+		border-radius: 15px;
+	}
+
+	.textos{
+		position: absolute;
+		top: 30px;
+		right: 40px;
+		text-align: right;
+		margin-right: 0px;
+		.texto1, .texto2 {
+			text-shadow: 2px 2px 3px rgba(102,102,102,0.6);
+		}
+		.texto1 {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: white;
+		}
+
+		.texto2 {
+			font-weight: 600;
+			color: #00D6D6;
+			// font-size: 2.2em;
+			// top: 380px;
+			font-size: 1.2em;
+			white-space: nowrap;
+			// top: 60px;
+		}
+	}
+
+	&.show {
+		display: block;
+	}
+
+	@media (min-width: 680px) {
+		.textos {
+			.texto1 {
+				font-size: 1.8rem;
+			}
+			.texto2 {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	@media (min-width: 980px) {
+		.textos {
+			.texto1 {
+				font-size: 2.3rem;
+			}
+			.texto2 {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.textos {
+			.texto1 {
+				font-size: 3rem;
+			}
+			.texto2 {
+				font-size: 2.1rem;
+			}
+		}
+	}
+}

@@ -1,16 +1,11 @@
 <div id="la-fundacion">
-	<div class="title">Fundación Educación Networking</div>
+	<h1 class="title">Fundación Educación Networking</h1>
+	<div>Bienvenidos a EDUCANET</div>
 	<div class="imagen">
 		<img src="imagenes/bienvenida.jpg" alt="">
 	</div>
 	<div class="texto">
-		<p>Culpa elit anim veniam irure aute duis. Commodo aliqua tempor magna commodo duis laborum reprehenderit velit eiusmod dolor velit dolor. Anim occaecat elit excepteur veniam excepteur reprehenderit consequat consequat eu consectetur officia. Eu incididunt aliqua consequat consequat duis aliqua ad exercitation. Culpa cupidatat fugiat anim quis excepteur. Irure sint sunt cillum occaecat sit ut magna. Velit voluptate velit proident ullamco qui adipisicing laborum.</p>
-
-		<p>Pariatur amet laboris cillum incididunt enim reprehenderit id pariatur ipsum duis voluptate nulla est. Enim ea proident nulla nostrud non sint do voluptate. Cillum do id aliquip qui irure.</p>
-
-		<p>Tempor ea amet voluptate fugiat anim dolore nulla veniam non dolore non aliqua cupidatat. Veniam elit eiusmod sint enim minim est esse laborum officia. Ullamco occaecat laboris velit commodo magna veniam.</p>
-		
-		<p>Consequat proident non consectetur consectetur ea fugiat mollit aliqua ipsum magna cillum pariatur labore consectetur. Mollit pariatur consectetur reprehenderit in eiusmod commodo sit. Nostrud occaecat quis deserunt excepteur ullamco aute excepteur. Enim mollit fugiat Lorem sit do ex voluptate veniam est ullamco incididunt. Non non qui aute id incididunt aute id ad.</p>
+		<p>Estamos enfocados en la educación y el desarrollo cultural de nuestra comunidad. Nos organizamos como fundación sin ánimo de lucro con personería jurídica y articulamos nuestras ofertas con instituciones universitarias, de investigación y de capacitación para la innovación.</p>
 	</div>
 </div>
 

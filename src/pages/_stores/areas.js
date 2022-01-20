@@ -1,5 +1,5 @@
 const url = "";
-export const carreras = [
+export const areas = [
 	{
 		"id": 0,
 		"area": "Educación", 
@@ -12,7 +12,40 @@ export const carreras = [
 				"nombre": "Licenciatura en Educación",
 				"uri": "https://www.ufasta.edu.ar/landings/licenciatura-en-educacion/",
 				"estudio": "licenciatura-en-educacion/",
-				"complementaria" : true
+				"complementaria" : true,
+				"inscripciones":"",
+				"descuento":"",
+				"modalidad":"Online",
+				"proximo-inicio":"",
+				"duracion":"",
+				"que-aprender": [
+					{
+						"icono": "",
+						"texto": ""
+					},
+				],
+				"futuro": "",
+				"plan-estudio-texto":"",
+				"plan-estudio": [
+					{
+						"periodo": "",
+						"materias": [
+							{"nombre": ""},
+						]
+					},
+				],
+				"inscripcion":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+				"dd":"",
+
 			},
 			{
 				"id" : 1,
@@ -54,7 +87,7 @@ export const carreras = [
 	{
 		"id": 1,
 		"area": "Economía y Administración",
-		"uri": "economia-y-educacion",
+		"uri": "economia-y-administracion",
 		"color": "#00279C",
 		"imagen": "economicas_icon.png",
 		"carreras": [
@@ -246,142 +279,143 @@ export const saltos = [
 		"estudio": "licenciatura-en-educacion"
 	},
 	{
-		"id" : 1,
+		"id" : 2,
 		"nombre": "Licenciatura en Psicopedagogía",
 		"uri": "https://www.ufasta.edu.ar/distancia/licenciatura-en-psicopedagogia/",
 		"estudio": "licenciatura-en-psicopedagogia"
 	},
 	{
-		"id" : 2,
+		"id" : 3,
 		"nombre": "Licenciatura en Educación Física",
 		"uri": "https://www.ufasta.edu.ar/landings/licenciatura-en-educacion-fisica/",
 		"estudio": "licenciatura-en-educacion-fisica"
 	},
 	{
-		"id" : 3,
+		"id" : 4,
 		"nombre": "Licenciatura en Inglés",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/licenciatura-en-ingles/",
 		"estudio": "licenciatura-en-ingles"
 	},
 	{
-		"id" : 4,
+		"id" : 5,
 		"nombre": "Licenciatura en Educación Religiosa",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/licenciatura-en-educacion-religiosa/",
 		"estudio": "licenciatura-en-educacion-religiosa/",
 		"complementaria" : true
 	},
 	{
-		"id" : 5,
+		"id" : 6,
 		"nombre": "POSGRADO - Especialización en Planificación y Gestión Estratégica de Proyectos Educativos",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/especializacion-en-planificacion-y-gestion-estrategica-en-proyectos-educativos/",
 		"estudio": "especializacion-en-planificacion-y-gestion-estrategica-en-proyectos-educativos"
 	},
 	{
-		"id" : 0,
+		"id" : 7,
 		"nombre": "Contador Público",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-contador-publico/",
 		"estudio": "landing-contador-publico"
 	},
 	{
-		"id" : 1,
+		"id" : 8,
 		"nombre": "Licenciatura en Recursos Humanos",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/licenciatura-en-recursos-humanos/",
 		"estudio": "licenciatura-en-recursos-humanos"
 	},
 	{
-		"id" : 2,
+		"id" : 9,
 		"nombre": "Licenciatura en Gestión del Talento Humano",
 		"uri": "https://www.ufasta.edu.ar/landings/licenciatura-en-gestion-del-talento-humano/",
 		"estudio": "licenciatura-en-gestion-del-talento-humano"
 	},
 	{
-		"id" : 3,
+		"id" : 10,
 		"nombre": "Licenciatura en Turismo",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-turismo/",
 		"estudio": "licenciatura-en-turismo"
 	},
 	{
-		"id" : 4,
+		"id" : 11,
 		"nombre": "Licenciatura en Marketing",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/licenciatura-en-marketing/",
 		"estudio": "licenciatura-en-marketing"
 	},
 	{
-		"id" : 5,
+		"id" : 12,
 		"nombre": "Licenciatura en Administración de Empresas",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-licenciatura-en-administracion/",
 		"estudio": "licenciatura-en-administracion"
 	},
 	{
-		"id" : 6,
+		"id" : 13,
 		"nombre": "Tecnicatura Universitaria en Administración de PYMES",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/tecnicatura-universitaria-en-administracion-de-pymes/",
 		"estudio": "tecnicatura-universitaria-en-administracion-de-pymes"
 	},
 	{
-		"id" : 0,
+		"id" : 14,
 		"nombre": "Abogacía",
 		"uri":"https://www.ufasta.edu.ar/landings/landing-abogacia/",
 		"estudio": "abogacia"
 	},
 	{
-		"id" : 1,
+		"id" : 15,
 		"nombre": "Martillero y Corredor Público",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-martillero-y-corredor-publico/",
 		"estudio": "martillero-y-corredor-publico"
 	},
 	{
-		"id" : 2,
+		"id" : 16,
 		"nombre": "Licenciatura en Corretaje Inmobiliario",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-corretaje-inmobiliario/",
 		"estudio": "corretaje-inmobiliario"
 	},
 	{
-		"id" : 3,
+		"id" : 17,
 		"nombre": "Tecnicatura en Seguridad Ciudadana",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-tec-en-seguridad-ciudadana/",
 		"estudio": "tecnicatura-en-seguridad-ciudadana"
 	},
 	{
-		"id" : 4,
+		"id" : 18,
 		"nombre": "Licenciatura en Seguridad Ciudadana",
 		"uri": "https://www.ufasta.edu.ar/landings/licenciatura-en-seguridad-ciudadana/",
 		"estudio": "licenciatura-en-seguridad-ciudadana"
 	},
 	{
-		"id" : 5,
+		"id" : 19,
 		"nombre": "Licenciatura en Archivología",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/licenciatura-en-archivologia/",
 		"estudio": "licenciatura-en-archivologia"
 	},
 	{
-		"id" : 6,
+		"id" : 20,
 		"nombre": "POSGRADO - Especialización en Informática Forense",
 		"uri": "https://www.ufasta.edu.ar/landings/distancia/especializacion-en-informatica-forense/",
 		"estudio": "especializacion-en-informatica-forense"
 	},
 	{
-		"id" : 0,
+		"id" : 21,
 		"nombre": "Licenciatura en Higiene y Seguridad en el Trabajo",
 		"uri": "https://www.ufasta.edu.ar/landings/licenciatura-en-higiene-y-seguridad-en-el-trabajo/",
 		"estudio": "licenciatura-en-higiene-y-seguridad-en-el-trabajo"
 	},
 	{
-		"id" : 1,
+		"id" : 22,
 		"nombre": "Tecnicatura en Higiene y Seguridad en el Trabajo",
 		"uri": "https://www.ufasta.edu.ar/landings/tecnico-en-seguridad-e-higiene/",
 		"estudio": "tecnico-en-seguridad-e-higiene"
 	},
 	{
-		"id" : 0,
+		"id" : 23,
 		"nombre": "Licenciatura en Periodismo",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-periodismo/",
 		"estudio": "licenciatura-en-periodismo"
 	},
 	{
-		"id" : 1,
+		"id" : 24,
 		"nombre": "Licenciatura en Diseño y Comunicación Transmedia",
 		"uri": "https://www.ufasta.edu.ar/landings/landing-lic-en-diseno-y-comunicacion-transmedia/",
 		"estudio": "licenciatura-en-diseno-y-comunicacion-transmedia"
 	}
 ]
+

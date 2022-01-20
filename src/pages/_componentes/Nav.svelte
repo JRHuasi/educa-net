@@ -15,11 +15,11 @@
 <aside>
   <nav class="mobile-nav">
     <span class="burger" on:click={handleBurger}>☰</span>
-    <span class="title"><img src="imagenes/logo-educanet.jpg" alt=""></span>    
+    <span class="title"><a href="/"><img src="/imagenes/logo-educanet.jpg" alt=""></a></span>    
   </nav>
   <nav class:show on:click={() => (show = false)}>
-		<a href="." id="logo-superior">
-			<img src="imagenes/logo-educanet.jpg" alt="">
+		<a href="/" id="logo-superior">
+			<img src="/imagenes/logo-educanet.jpg" alt="">
 		</a>
     {#each _enlacesMenu as [path, name]}
       <a class="link" class:active={$isActive(path)} href={$url(path)}>

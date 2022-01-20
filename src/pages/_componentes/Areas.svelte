@@ -1,18 +1,17 @@
 <script>
 	import Area from './Area.svelte';
-	import {carreras} from '../_stores/carreras';
-	console.log(carreras)
+	import {areas} from '../_stores/areas';
 </script>
 
-<div id="carreras">
-	{#each carreras as carrera}
-		<Area {carrera} />
+<div id="areas">
+	{#each areas as area}
+		<Area {area} />
 	 <!-- content here -->
 	{/each}
 </div>
 
 <style>
-	#carreras{
+	#areas{
 		justify-content: center;
 		margin: auto;
 		width: 80%;
@@ -22,10 +21,9 @@
 	}
 
 	@media (max-width: 750px) {
-		#carreras{
+		#areas{
 			grid-template-columns: 1fr;
 			/* margin: 0 150px; */
 		}
 	}
-
 </style>
