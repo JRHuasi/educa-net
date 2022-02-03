@@ -1,0 +1,29 @@
+#contactus{
+	.contenidos{
+		padding: 50px;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		svg{
+			width: 1em;
+			float: left;
+		}
+		label {
+			padding: 5px 0;
+		}
+		textarea {
+			height: 120px;
+		}
+	}
+}
+
+@media (min-width: 768px){
+	#contactus{
+		.contenidos{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}

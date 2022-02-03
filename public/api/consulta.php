@@ -5,10 +5,9 @@
 	header('Content-type: application/json');
 	extract($_POST);
 	
-	// Name Email Phone Subject Message
 	$to = "uaa.tucconcepcion@ufasta.edu.ar";
 	
-	$subject = "Contaco - EDUCANET";
+	$subject = "Pedido de información - EDUCANET";
 	
 	//envio de datos a la base de datos
 	// $cadena = "INSERT INTO correos SET
@@ -30,6 +29,22 @@
 			'val' => $email
 		),
 		2 => array(
+			'text' => 'Celular',
+			'val' => $codCelular." ".$celular
+		),
+		3 => array(
+			'text' => 'Localidad',
+			'val' => $localidad
+		),
+		4 => array(
+			'text' => 'Provincia',
+			'val' => $provincia
+		),
+		5 => array(
+			'text' => 'Curso',
+			'val' => $curso
+		),
+		6 => array(
 			'text' => 'Consulta',
 			'val' => $consulta
 		)
@@ -59,3 +74,4 @@
 		print json_encode("Your message was delivered successfully, as soon as posible we'll contact you.<br>Thank you");
 	}
 ?>
+
