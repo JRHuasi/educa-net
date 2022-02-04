@@ -11,7 +11,7 @@
 </script>
 <!-- routify:options preload="proximity" -->
 <Nav />
-<div id="root" class="container">
+<div class="contenedor">
 	<slot />
 </div>
 <Footer />

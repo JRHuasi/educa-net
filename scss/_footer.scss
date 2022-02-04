@@ -1,8 +1,10 @@
 #banda {
+	// position: fixed;
+	// bottom: 0;
 	background-color: $fondoMenu;
-	position: relative;
 	color: #fff;
 	#footer {
+		position: relative;
 		overflow: hidden;
 		width: 100%; /* Full width */
 		display: grid;
