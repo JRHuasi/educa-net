@@ -8,7 +8,7 @@
 
 	export let estudio;
 
-	const carrera = saltos.filter(salto => salto.estudio === estudio);
+	const carrera = saltos.filter(salto => salto.estudioUri === estudio);
 
 	console.log({carrera})
 

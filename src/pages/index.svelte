@@ -3,12 +3,15 @@
 	import Areas from './_componentes/Areas.svelte';
 	import Redes from './_componentes/Redes.svelte';
 	import Consultas from './_componentes/Consultas.svelte';
+	import ConsCarrera from './_componentes/ConsCarrera.svelte';
 </script>
 
-<Slider />
+<!-- <Slider /> -->
 
 <!-- <Areas /> -->
 
-<Consultas />
+<!-- <Consultas /> -->
+
+<ConsCarrera />
 
 <!-- <Redes /> -->

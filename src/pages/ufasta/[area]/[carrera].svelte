@@ -1,11 +1,11 @@
 <script>
-	import {url} from '@roxi/routify';
+	import { metatags, url} from '@roxi/routify';
 	import Fa from 'svelte-fa';
-  import { faClipboardList, faPercent, faSatelliteDish, faCalendarAlt, faClock, faPenNib, faMap, faBook, faGlasses } from '@fortawesome/free-solid-svg-icons';
+  import { faClipboardList, faPercent, faSatelliteDish, faCalendarAlt, faClock, faPenNib, faMap, faBook, faGlasses, faUsers, faChartLine } from '@fortawesome/free-solid-svg-icons';
   import { faCopy } from '@fortawesome/free-regular-svg-icons';
   import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-	import {areas, datosCarrera, licenciaturaEducacion} from '../../_stores/areas';
+	import {areas, datosCarrera, educacion} from '../../_stores/areas';
 
 	export let carrera;
 	
@@ -17,43 +17,8 @@
 	imagenPrincipal = `/imagenes/areas/${area}/${carrera}.jpg`;
 	console.log(window.location.pathname);
 
-	// let datos = datosCarrera(carrera, area);
-	// $: console.log(datos);
-
-	/* 
-		let data;
-		const datos = async () => {
-			try {
-				data = await datosCarrera(carrera, area);
-				return data;
-			} catch (error) {
-				console.log({error});			
-			}
-		}
-		datos();
-		console.log("CONCHA: ", data); */
-
-	/* 
-		// $: console.log({area});	
-		// estudio = areas.filter((areaFasta) => areaFasta.utf === area);
-		// carreras = estudio.map(estu => estu.carreras);
-		// $: carreraData = carreras.map(carr => carr.id);
-		
-		// console.log("LENGTH ", estudio.length);
-		// $: console.log({area}, {carrera});
-		// $: console.log({estudio});
-
-		// $: console.log("carreras", carreras);
-		// $: console.log({carreraData});
-
-		// console.log({area});
-
-		// $: console.log("estudio: ",estudio[0]); 
-	*/
-
-	
-	const dato = licenciaturaEducacion.carreras.filter(carr => carr.estudioUri === `${carrera}/`)[0];
-	console.log("DATOS", dato);
+	let dato = datosCarrera(carrera, area)[0];
+	console.log("DATOS", dato.nombre);
 
 </script>
 
@@ -75,9 +40,9 @@
 					</div>
 
 
-					<div class="fa"><Fa icon={faSatelliteDish} /></div>
+					<div class="fa"><Fa icon={faCalendarAlt} /></div>
 					<div class="tags-inscr desc">
-						Modalidad<br>{dato.modalidad}
+						Próximo Inicio<br>{dato['proximo-inicio']}
 					</div>
 
 					<div class="espacio"></div>
@@ -160,9 +125,11 @@
 				<div class="arranca-bajada">
 					¿Tenés alguna consulta? Esperamos tu mensaje
 				</div>
-				<div class="arranca-boton whatsapp">
-					<Fa icon={faWhatsapp}/> WhatsApp
-				</div>
+				<div class="arranca-boton whatsapp">					
+						<a href="https://api.whatsapp.com/send?phone=5493865268541&text=Hola, quiero consulta sobre {dato.nombre}" target="_blank">
+							<Fa icon={faWhatsapp}/> WhatsApp
+						</a>
+					</div>
 			</div>
 
 			<div class="arranca-panel">
@@ -173,7 +140,7 @@
 					Si ya te decidiste, ¡Inscribite HOY!
 				</div>
 				<div class="arranca-boton">
-					Inscripción
+					<a href={dato.inscripcion} target="_blank">Inscripción</a>
 				</div>
 			</div>
 		</div>
@@ -189,3 +156,5 @@
 		
 	</div>
 </div>
+
+

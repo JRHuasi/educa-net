@@ -6,6 +6,7 @@
 		#principal-cuerpo{
 			position: absolute;
 			top: 50px;
+			width: 100%;
 			display: flex;
 			align-items: flex-stretch;
 			flex-wrap: wrap;
@@ -21,7 +22,8 @@
 						font-size: 1.3rem;
 						align-items: center;
 						justify-content: center;
-						padding-left: 15px;			
+						padding-left: 15px;
+						text-transform: uppercase;
 						&.desc{
 							font-weight: 600;
 						}
@@ -52,8 +54,8 @@
 			}
 		}
 		#que-vas-items{
-			display: flex;
-			align-items: flex-stretch;			
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 			justify-content: space-around;
 			color: black;
 			margin-bottom: 30px;
@@ -171,6 +173,9 @@
 				font-size: 1.2rem;
 				&.whatsapp{
 					background: #25D366;
+				}
+				a{
+					color: white;
 				}
 			}
 		}
