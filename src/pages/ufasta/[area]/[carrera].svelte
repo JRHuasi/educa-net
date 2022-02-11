@@ -55,7 +55,7 @@
 							</div>
 						{/if}
 
-						<div class="fa"><Fa icon={faCalendarAlt} /></div>
+						<div class="fa"><Fa icon={faClock} /></div>
 						<div class="tags-inscr desc">
 							Próximo Inicio<br>{dato['proximo-inicio']}
 						</div>
@@ -154,7 +154,7 @@
 			{/each}
 		</div>
 
-		<div id="info-aranceles">
+		<div id="info-aranceles" on:click={() => mostrarConsulta()}>
 			Información sobre aranceles
 		</div>
 
