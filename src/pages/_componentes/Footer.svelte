@@ -1,21 +1,46 @@
 <script>
 	import Fa from 'svelte-fa';
   import { faInstagram, faFacebookF, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-	import { faPhone } from '@fortawesome/free-solid-svg-icons';
+	import { faPhone, faPhoneAlt, faEnvelope, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+	import { defs } from '../_stores/definiciones.js';
+
 
 </script>
 <div id="banda">
 	<div id="footer">
 		<div id="logo">
 			<img src="/imagenes/logo-educanet-transp.png" class="img" alt="logo">
+			<div class="fontnunito">
+				<div>
+					<Fa icon={faEnvelope}/> <span>{defs.email}</span>
+				</div>
+				<div>
+					<Fa icon={faPhoneAlt} /> <span>{defs.whatsapp}</span>
+				</div>
+				<div>
+					<Fa icon={faMapMarkerAlt} /><span>{defs.direccion}</span>
+				</div>
+			</div>
 		</div>
 		<div id="informes">
 			<p>Informes e Inscripción</p>
-			<Fa icon={faWhatsapp} /> +5493865268541
+			<a href="https://api.whatsapp.com/send?phone=5493865268541&text=Hola EDUCANET, quiero hacer la siguiente consulta: " target="_blank">				
+				<span id="what"><Fa icon={faWhatsapp} /></span> +5493865268541
+			</a>
 		</div>
 		<div id="copyright">
-			<Fa icon={faFacebookF} />
-			<Fa icon={faInstagram} />
+			<div>
+				<a href={defs.facebook} target="_blank">
+					<Fa icon={faFacebookF} />
+				</a>
+			</div>
+			<div>
+				<a href={defs.instagram} target="_blank">
+					<Fa icon={faInstagram} />
+				</a>
+			</div>
+			
+			
 			
 		</div>
 	</div>

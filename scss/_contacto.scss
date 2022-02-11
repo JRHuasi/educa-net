@@ -1,29 +1,48 @@
 #contactus{
-	.contenidos{
-		padding: 50px;
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		justify-content: center;
-		gap: 50px;
-		svg{
-			width: 1em;
-			float: left;
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	svg{
+		width: 1em;
+		float: left;
+	}
+	label {
+		padding: 5px 0;
+	}
+	textarea {
+		height: 120px;
+	}
+	.fontnunito {
+		div{
+			margin-bottom: 10px;
+			span{
+				padding-left: 10px;
+			}
 		}
-		label {
-			padding: 5px 0;
-		}
-		textarea {
-			height: 120px;
+	}
+	form{
+		#form-base{
+			width: 100%;
+			display: flex;
+			.texto-auxiliar {
+				padding-left: 15px;
+				font-weight: 200;
+				color: red;
+				font-style: italic;
+				height: 25px;
+				text-align: left;
+			}
 		}
 	}
 }
 
 @media (min-width: 768px){
 	#contactus{
-		.contenidos{
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
 	}
 }

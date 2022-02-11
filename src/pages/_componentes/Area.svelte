@@ -12,9 +12,9 @@
 	<ul class="cursos">
 		{#each area.carreras as carr}
 			<li>
-				 <a href={$url(`estudios/${carr.estudioUri}`)} target="_blank">
-					{carr.nombre}</a>
-			</li>
+				 <a href={$url(`/ufasta/${area.utf}/${carr.estudioUri}`)}>
+					{carr.nombre}</a> 
+				</li>
 		{/each}
 	</ul>
 </div>

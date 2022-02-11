@@ -3,7 +3,7 @@
 </script>
 
 <div id="ufasta">
-	<h1>Cursos y Diplomaturas Online</h1>
-	<h3>con Certificación Universitaria</h3>
+	<h1>Carreras Universitarias Online</h1>
+	<h3>Títulos oficiales - Validez Nacional</h3>
 	<Areas />
 </div>

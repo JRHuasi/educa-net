@@ -6,8 +6,9 @@
 	extract($_POST);
 	
 	$to = "uaa.tucconcepcion@ufasta.edu.ar";
+	// $to = "julianra@gmail.com";
 	
-	$subject = "Pedido de información - EDUCANET";
+	$subject = "Pedido de información - {$curso} - EDUCANET";
 	
 	//envio de datos a la base de datos
 	// $cadena = "INSERT INTO correos SET
@@ -25,26 +26,30 @@
 			'val' => $nombre
 		),
 		1 => array(
+			'text' => 'Apellido',
+			'val' => $apellido
+		),
+		2 => array(
 			'text' => 'Email',
 			'val' => $email
 		),
-		2 => array(
+		3 => array(
 			'text' => 'Celular',
 			'val' => $codCelular." ".$celular
 		),
-		3 => array(
+		4 => array(
 			'text' => 'Localidad',
 			'val' => $localidad
 		),
-		4 => array(
+		5 => array(
 			'text' => 'Provincia',
 			'val' => $provincia
 		),
-		5 => array(
+		6 => array(
 			'text' => 'Curso',
 			'val' => $curso
 		),
-		6 => array(
+		7 => array(
 			'text' => 'Consulta',
 			'val' => $consulta
 		)

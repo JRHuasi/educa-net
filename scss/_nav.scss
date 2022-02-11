@@ -50,6 +50,15 @@ aside {
     width: 100%;
     padding: 16px;
     z-index: 1;
+		a {
+			img{
+				&.logo-ufasta{
+					width: 110px;
+					margin-right: 15px;
+					margin-left: 15px;
+				}
+			}
+		}
   }
 
   @media (min-width: 1200px) {
@@ -62,10 +71,8 @@ aside {
       // width: auto;
       a#logo-superior{
         display: inline-block;
-        margin-right: 150px;
+        margin-right: 15px;
       }
-
-
     }
     .link {
       padding: 0 16px;

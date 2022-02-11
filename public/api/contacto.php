@@ -7,6 +7,7 @@
 	
 	// Name Email Phone Subject Message
 	$to = "uaa.tucconcepcion@ufasta.edu.ar";
+	// $to = "julianra@gmail.com";
 	
 	$subject = "Contaco - EDUCANET";
 	

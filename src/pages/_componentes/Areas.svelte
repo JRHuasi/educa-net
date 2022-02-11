@@ -6,7 +6,6 @@
 <div id="areas">
 	{#each areas as area}
 		<Area {area} />
-	 <!-- content here -->
 	{/each}
 </div>
 

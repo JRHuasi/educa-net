@@ -1,4 +1,4 @@
-<script>	
+<script>
 	import Fa from 'svelte-fa';
   import { faPhoneAlt, faEnvelope, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 	import {mensajes} from './_stores/mensajeStore';
@@ -53,11 +53,6 @@
 			} catch (err) {
 				console.log(err);
 			}
-
-
-			/* if(res){
-			} */
-
 		}
 	}
 
@@ -70,81 +65,80 @@
 </script>
 
 <div class="contact" id="contactus">
-	<div class="contenidos">
-		<div data-aos="fade-up" data-aos-delay="200" class="col-lg-6 col-12">
-			<div class="row">
-				<div class="pt-2 text col-12">
-					<img alt=""	src="/imagenes/iso-educanet-transp.png"
-						width="200"
-						height="200"/>
-				</div>
-				<div class="text col-12">
-					<h5 class="pt-2 px-3 px-md-0 pr-md-5 ">
-						Recibe más información sobre nuestras carreras
-					</h5>
-					<div class="fontnunito">
-						<p class="pt-1">
-							<Fa icon={faEnvelope}/> {defs.email}
-						</p>
-						<p class="pt-1">
-							<Fa icon={faPhoneAlt} /> {defs.whatsapp}
-						</p>
-						<p class="pt-1">
-							<Fa icon={faMapMarkerAlt} />{defs.direccion}
-						</p>
+	<div>
+		<div class="row">
+			<div class="pt-2 text col-12">
+				<img alt=""	src="/imagenes/iso-educanet-transp.png"
+					width="200"
+					height="200"/>
+			</div>
+			<div class="text col-12">
+				<h5 class="pt-2 px-3 px-md-0 pr-md-5 ">
+					Recibe más información sobre nuestras carreras
+				</h5>
+				<div class="fontnunito">
+					<div>
+						<Fa icon={faEnvelope}/> <span>{defs.email}</span>
+					</div>
+					<div>
+						<Fa icon={faPhoneAlt} /> <span>{defs.whatsapp}</span>
+					</div>
+					<div>
+						<Fa icon={faMapMarkerAlt} /><span>{defs.direccion}</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div>
-			<h1 class="gold">Contactanos</h1>
-				{#if formContacto}
-			
-					<form on:submit|preventDefault={enviarConsulta}>
-						<div class="texto-auxiliar rojo">{textoAlerta}</div>
-						<div class="form-group">
-							<label class="form-label" for="name">Nombre</label><input
-								required=""
-								placeholder="Ingresa tu Nombre"
-								type="text"
-								name="nombre"
-								class="form-control"
-								bind:value={nombre}
-							/>
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="mail">Email</label><input
-								required=""
-								placeholder="Ingresa tu Mail"
-								type="email"
-								name="email"
-								class="form-control"
-								bind:value={email}
-							/>
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="msg">Mensaje</label>
-							<textarea
-								required=""
-								placeholder="Ingresa tu mensaje"
-								rows="5" cols="30"
-								name="consulta"
-								class="form-control"
-								bind:value={consulta}
-							/>
-						</div>
+	</div>
+	<div>
+		<h1 class="gold">Contactanos</h1>
+			{#if formContacto}
+				<form on:submit|preventDefault={enviarConsulta}>
+					<div class="form-group">
+						<label class="form-label" for="name">Nombre</label><input
+							required=""
+							placeholder="Ingresa tu Nombre"
+							type="text"
+							name="nombre"
+							class="form-control"
+							bind:value={nombre}
+						/>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="mail">Email</label><input
+							required=""
+							placeholder="Ingresa tu Mail"
+							type="email"
+							name="email"
+							class="form-control"
+							bind:value={email}
+						/>
+					</div>
+					<div class="form-group">
+						<label class="form-label" for="msg">Mensaje</label>
+						<textarea
+							required=""
+							placeholder="Ingresa tu mensaje"
+							rows="5" cols="30"
+							name="consulta"
+							class="form-control"
+							bind:value={consulta}
+						/>
+					</div>
+					<div id="form-base">					
 						<button type="submit" class="buttoncontact btn btn-info"
 							>Enviar</button
 						>
-					</form>
-				{:else}
-					<div id="cuerpoTexto">						
-						<p>La consulta se envió con éxito</p>
-						<br>
-						<p>A la brevedad te responderá uno de nuestros asesores</p>			
+						<div class="texto-auxiliar rojo">{textoAlerta}</div>
 					</div>
-				{/if}
+				</form>
+			{:else}
+				<div id="cuerpoTexto">						
+					<p>La consulta se envió con éxito</p>
+					<br>
+					<p>A la brevedad te responderá uno de nuestros asesores</p>			
+				</div>
+			{/if}
 
-		</div>
 	</div>
 </div>

@@ -1,6 +1,10 @@
 #banda {
 	// position: fixed;
 	// bottom: 0;
+	// clear: both;
+	// position: relative;
+	// height: 200px;
+	// margin-top: -200px;
 	background-color: $fondoMenu;
 	color: #fff;
 	#footer {
@@ -17,11 +21,41 @@
 			img{
 				width: 100%;
 			}
+			.fontnunito {
+				text-align: left;
+				margin-top: 20px;
+				div{
+					margin-bottom: 10px;
+					span{
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+		#copyright{
+			display: flex;
+			font-size: 35px;
+			justify-content: centar;
+			gap: 15px;
+		}
+		#informes {
+			font-weight: bold;
+			line-height: 30px;
+			a{
+				#what{
+					font-size: 1.3rem;
+					font-weight: 700;
+					color: green;
+				}
+			}
 		}
 		p{
 			margin: 0px;
 		}
-	}
+		a {
+			color: white;
+		}
+}
 	#banda-inferior{
 		text-align: center;
 		font-size: 12px;
